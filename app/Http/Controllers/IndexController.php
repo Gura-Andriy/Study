@@ -59,7 +59,7 @@ class IndexController extends Controller
             $file->move(storage_path("app/$path"),$file->getClientOriginalName());
             $offer->images = $file->getClientOriginalName();
             $offer->save();
-        }
+        }dd
 
         return redirect()->route('apartment');
     }
