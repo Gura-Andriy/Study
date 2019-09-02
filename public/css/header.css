@@ -1,0 +1,122 @@
+/* скриває чекбокс */
+#menu__toggle {
+    opacity: 0;
+}
+/* стилізація кнопки */
+.menu__btn {
+    display: flex; /* flex для центрування вмісту */
+    align-items: center;  /* центрування вміст кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 50%;
+}
+/* додавання "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    left: 15px;
+    background-color: #1c7430;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+    left: 0px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+    left: 0px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 25px;
+    list-style: none;
+    text-align: right;
+    background-color: #50a3a2;
+    opacity: 0.95;
+    z-index: 1;
+
+    transform: scale(1) rotateZ(0deg);
+    -moz-transform: scale(1) rotateZ(0deg);
+    -webkit-transform: scale(1) rotateZ(0deg);
+    -o-transform: scale(1) rotateZ(0deg);
+    -ms-transform: scale(1) rotateZ(0deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* елементи меню */
+.menu__item {
+    display: block;
+    padding: 7px 24px;
+    color: #1d2124;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: -40px;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+.menu__item:hover {
+    color: #fff;
+    height: auto;
+    text-decoration: none;
+}
+
+.menu__item-1 {
+    display: block;
+    padding: 7px 24px;
+    color: #1d2124;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: -40px;
+    margin-top: 120px;
+    transition: all 0.4s ease;
+}
+.menu__item-1:hover {
+    color: #fff;
+    height: auto;
+    text-decoration: none;
+}

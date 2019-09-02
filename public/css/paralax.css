@@ -1,0 +1,30 @@
+.wrapper {
+    height: 100vh;
+}
+
+.parallax-img {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+body {
+    margin: 0;
+    background: #000;
+}
+
+
+.text-paralax {
+    margin: 15px;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.parallax-img {
+    background-image: url('http://genchi.info/image/new-york-city-wallpaper-hd-3.jpg');
+}
+
