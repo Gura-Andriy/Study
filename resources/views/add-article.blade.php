@@ -7,7 +7,7 @@
                     <div class="card-header">{{ __('add article') }}</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{route('submit-add-article')}}">
+                        <form method="POST" action="{{route('submit-add-article')}}" enctype="multipart/form-data">
                             @csrf
 
                             <div class="form-group row">
@@ -21,17 +21,6 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
-                                </div>
-                            </div>
-
-                            <div class="input-group mb-3">
-                                <label class="col-md-4 col-form-label text-md-right" for="user-id">User</label>
-                                <div class="col-md-6">
-                                    <select class="custom-select" id="user-id" name="user-id">
-                                        @foreach($users as $user)
-                                        <option value="{{$user->id}}">{{$user->name}}</option>
-                                            @endforeach
-                                    </select>
                                 </div>
                             </div>
 

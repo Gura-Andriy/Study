@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\OffersFormValidation;
 use App\models\Article;
 use App\models\Category;
 use App\models\Offer;
@@ -37,7 +38,7 @@ class IndexController extends Controller
         return view('add-offer', compact("users", "categories"));
     }
 
-    public function SubmitAddOffer(Request $request)
+    public function SubmitAddOffer(OffersFormValidation $request)
     {
 
         $offer = new Offer();
@@ -59,7 +60,7 @@ class IndexController extends Controller
             $file->move(storage_path("app/$path"),$file->getClientOriginalName());
             $offer->images = $file->getClientOriginalName();
             $offer->save();
-        }dd
+        }
 
         return redirect()->route('apartment');
     }
@@ -74,18 +75,20 @@ class IndexController extends Controller
         $article = new Article();
         $article->name = $request->input('name');
         $article->description = $request->input('description');
-        $article->user_id = $request->input('user-id');
+        $article->user_id = Auth::user()->id;
         $article->save();
-
         if($request->hasFile('image')) {
             $file = $request->file('image');
-            $path = "articles/{$article->id}";
-            Storage::makeDirectory($path);
+            $path = "public/articles/{$article->id}";
+            if(!Storage::exists($path)){
+                Storage::makeDirectory($path);
+            }
             $file->move(storage_path("app/$path"),$file->getClientOriginalName());
             $article->images = $file->getClientOriginalName();
-            $article->save();}
+            $article->save();
+        }
 
-        return redirect()->route('index');
+        return redirect()->route('articles');
     }
 
     public function editOffer($offer_id)
@@ -96,7 +99,7 @@ class IndexController extends Controller
         return view('edit-offer', compact('offer','users', 'categories'));
     }
 
-    public function submitEditOffer(Request $request, $offer_id)
+    public function submitEditOffer(OffersFormValidation $request, $offer_id)
     {
         $offer = Offer::find($offer_id);
         $offer->title = $request->input('title');
@@ -137,4 +140,59 @@ class IndexController extends Controller
         return view('view-offer', compact('offer','user'));
     }
 
+
+    public function articles()
+    {
+        $articles = Article::orderBy('id' , 'DESC')->paginate(6);
+        return view('articles', compact('articles'));
+    }
+
+    public function editArticle($article_id)
+    {
+        $users = User::get();
+        $article = Article::find($article_id);
+        return view('edit-article', compact('article','users'));
+    }
+
+    public function deleteArticle($article_id)
+    {
+        $article = Article::find($article_id);
+        $article->delete();
+        return redirect()->route('articles');
+    }
+
+    public function submitEditArticle(Request $request, $article_id)
+    {
+        $article = Article::find($article_id);
+        $article->name = $request->input('name');
+        $article->description = $request->input('description');
+        $article->user_id = Auth::user()->id;
+        $article->save();
+
+        if($request->hasFile('image')) {
+            $file = $request->file('image');
+            $path = "public/articles/{$article->id}";
+            if(!Storage::exists($path)){
+                Storage::makeDirectory($path);
+            }
+            $file->move(storage_path("app/$path"),$file->getClientOriginalName());
+            $article->images = $file->getClientOriginalName();
+            $article->save();
+        };
+
+        return redirect()->route('articles');
+    }
+
+    public function searchOffer(Request $request)
+    {
+
+        $apartment = Offer::where('title', 'like', '%' . $request->input('search') . '%')->orderBy('id','DESC')->paginate(10);
+        $article = Article::where('title', 'like', '%' . $request->input('search') . '%')->orderBy('id','DESC')->paginate(10);
+
+        return view('apartment', compact('apartment'));
+//        return view('apartment', compact('apartment','article'));
+
+    }
+
 }
+

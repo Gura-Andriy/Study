@@ -39,9 +39,18 @@
             <span></span>
         </label>
         <ul class="menu__box" id="menu">
+
+            <li>
+            <form class="form-inline mt-2 mt-md-0" method="get" action="{{route('search-offer')}}">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </li>
+
             <li><a class="menu__item-1" class="navbar-brand" href="/">Home</a></li>
             <li><a class="menu__item" href="{{route('index')}}">index</a></li>
             <li><a class="menu__item" href="{{route('apartment')}}">aparments</a></li>
+            <li><a class="menu__item" href="{{route('articles')}}">articles</a></li>
             <li><a class="menu__item" href="{{route('registration')}}">registration</a></li>
             @if(Auth::user())
             <li><a class="menu__item" href="{{route('add-offer')}}">add offer</a></li>
