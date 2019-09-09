@@ -187,7 +187,7 @@ class IndexController extends Controller
     {
 
         $apartment = Offer::where('title', 'like', '%' . $request->input('search') . '%')->orderBy('id','DESC')->paginate(10);
-        $article = Article::where('title', 'like', '%' . $request->input('search') . '%')->orderBy('id','DESC')->paginate(10);
+//        $article = Article::where('title', 'like', '%' . $request->input('search') . '%')->orderBy('id','DESC')->paginate(10);
 
         return view('apartment', compact('apartment'));
 //        return view('apartment', compact('apartment','article'));
