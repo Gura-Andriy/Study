@@ -6,7 +6,7 @@
     <style>
 
         body {
-            background: url('storage/new-york-city-wallpaper-hd-3.jpg');
+            background: url('http://genchi.info/image/new-york-city-wallpaper-hd-3.jpg');
             height: 100%;
             background-size: cover;
             background-repeat: no-repeat;

@@ -32,7 +32,6 @@
             border-radius: 2px;
         }
 
-
     </style>
 
     <div class="container">
@@ -84,6 +83,9 @@
                                 </div>
                                 <textarea name="description" class="form-control" aria-label="description">{{$article->description}}</textarea>
                             </div>
+
+                            <div>&nbsp</div>
+
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">

@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3a9472-8a2e-440e-9675-1a077d220ad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/view-article.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/add-article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/add-article.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/add-offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/add-offer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/edit-article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit-article.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/edit-offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit-offer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/view-offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view-offer.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +219,8 @@
       <workItem from="1567789237757" duration="2086000" />
       <workItem from="1567844313235" duration="8000" />
       <workItem from="1568048475148" duration="7751000" />
-      <workItem from="1568317201463" duration="11938000" />
+      <workItem from="1568317201463" duration="13032000" />
+      <workItem from="1568404458490" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1567441972016</created>
@@ -248,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568059881600</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="пʼятниця">
+      <created>1568384582627</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568384582627</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,14 +272,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="останній день курсів" />
-    <option name="LAST_COMMIT_MESSAGE" value="останній день курсів" />
+    <MESSAGE value="пʼятниця" />
+    <option name="LAST_COMMIT_MESSAGE" value="пʼятниця" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/auth/register.blade.php</url>
-          <line>27</line>
+          <line>90</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
