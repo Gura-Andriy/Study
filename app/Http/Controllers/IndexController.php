@@ -194,5 +194,14 @@ class IndexController extends Controller
 
     }
 
+    public function showArticle($article_id)
+    {
+        $article = Article::find($article_id);
+        $user = User::find($article->user_id);
+
+        return view('view-article', compact('article','user'));
+    }
+
 }
+
 

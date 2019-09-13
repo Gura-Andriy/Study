@@ -15,14 +15,30 @@
             display: flex;
         }
 
+        body {
+            background: url('http://genchi.info/image/new-york-city-wallpaper-hd-3.jpg');
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
+
+        .card {
+            top: 100px;
+            opacity: 0.83;
+            padding: 30px;
+            background: #50a3a2;
+            border: none;
+            border-radius: 2px;
+        }
+
+
     </style>
 
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Edit offer</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{route('submit-edit-offer', [$offer->id])}}" enctype="multipart/form-data">

@@ -36,17 +36,17 @@
     <div class="content-element">
 
         <div>
-            @if($offer->images)
-                <img src="{{asset("storage/offers/$offer->id/$offer->images")}}" class="image-page" alt="...">
+            @if($article->images)
+                <img src="{{asset("storage/articles/$article->id/$article->images")}}" class="image-page" alt="...">
             @else
                 <img src="https://07f138315bb5e97f9e43-31068357019044cca7c8e84d92de0d99.ssl.cf3.rackcdn.com/1024x768/56587_11491_001.jpg" class="image-page" alt="...">
             @endif
         </div>
 
         <div class="card-body text-center">
-            <h1>{{$offer->title}}</h1>
-            <p>{{$offer->description}}</p>
-            <h3>{{$user->name}}&nbsp&nbsp{{number_format($offer->price)}}&nbsp{{$offer->currency}}</h3>
+            <h1>{{$article->name}}</h1>
+            <p>{{$article->description}}</p>
+            <h3>{{$user->name}}</h3>
         </div>
 
     </div>
