@@ -19,7 +19,19 @@
 <style>
 
     body {
-        background-color: #d6e9f8;
+        background: url('http://genchi.info/image/new-york-city-wallpaper-hd-3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: auto;
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 50px;
     }
 
 </style>
@@ -28,8 +40,14 @@
 
 @include('layouts.header')
 @yield('content')
-@include('layouts.footer')
 
+
+
+<h1>All realty in one place</h1>
+<h4>Fast, cheap, easy!</h4>
+
+
+@include('layouts.footer')
 <script src="/js/jquery.js"></script>
 <script src="/js/bootsrap.js"></script>
 </body>

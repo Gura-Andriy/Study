@@ -85,7 +85,7 @@
                             @if($offer->images)
                                 <img src="{{asset("storage/offers/$offer->id/$offer->images")}}" class="round" alt="...">
                             @else
-                                <img src="https://07f138315bb5e97f9e43-31068357019044cca7c8e84d92de0d99.ssl.cf3.rackcdn.com/1024x768/56587_11491_001.jpg" class="round" alt="...">
+                                <img src="https://responsive3.estateplus.net/images/no-image.png" class="round" alt="...">
                             @endif
 
                             <div class="form-group row">

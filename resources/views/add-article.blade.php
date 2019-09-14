@@ -32,7 +32,7 @@
                             @csrf
 
                             <div class="form-group row">
-                                <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
+                                <label for="name" class="col-md-4 col-form-label text-md-right">Title</label>
 
                                 <div class="col-md-6">
                                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}">
@@ -61,7 +61,7 @@
 
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">Description</span>
+                                    <span class="input-group-text">Text</span>
                                 </div>
                                 <textarea name="description" class="form-control" aria-label="description"></textarea>
                             </div>

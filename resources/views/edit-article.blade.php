@@ -60,7 +60,8 @@
                             @if($article->images)
                                 <img src="{{asset("storage/articles/$article->id/$article->images")}}" class="round" alt="...">
                             @else
-                                <img src="https://07f138315bb5e97f9e43-31068357019044cca7c8e84d92de0d99.ssl.cf3.rackcdn.com/1024x768/56587_11491_001.jpg" class="round" alt="...">
+                                <img src="https://virudhunagar.nic.in/wp-content/themes/district-theme/images/uncategorized.jpg" class="round" alt=" ">
+{{--                                <img src="https://07f138315bb5e97f9e43-31068357019044cca7c8e84d92de0d99.ssl.cf3.rackcdn.com/1024x768/56587_11491_001.jpg" class="round" alt="...">--}}
                             @endif
 
                             <div class="form-group row">
