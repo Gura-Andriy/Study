@@ -31,12 +31,6 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
-        /*.comment-area {*/
-        /*    width: auto;*/
-        /*    margin-left: 20%;*/
-        /*    margin-right: 20%;*/
-        /*}*/
-
     </style>
 
     <div class="content-element">
@@ -56,23 +50,5 @@
         </div>
 
     </div>
-
-{{--    <div>&nbsp</div>--}}
-{{--    <div>&nbsp</div>--}}
-{{--    <div>&nbsp</div>--}}
-{{--    <div>&nbsp</div>--}}
-{{--    <div>&nbsp</div>--}}
-{{--    <div>&nbsp</div>--}}
-
-{{--    <div class="input-group comment-area">--}}
-{{--        <div class="input-group-prepend">--}}
-{{--            <span class="input-group-text">Comment</span>--}}
-{{--        </div>--}}
-{{--        <textarea name="text_comment" class="form-control"></textarea>--}}
-
-{{--        @if(Auth::user() && Auth::user()->id == $article->user_id)--}}
-{{--            <a href="{{route('edit-article', [$article->id])}}" class="btn btn-primary">Comment</a>--}}
-{{--        @endif--}}
-{{--    </div>--}}
 
 @endsection
