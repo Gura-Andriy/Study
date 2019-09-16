@@ -13,7 +13,7 @@
     }
 
     .opacit {
-        opacity: 0.8;
+        opacity: 0.95;
     }
 
 </style>
@@ -34,7 +34,7 @@
         <label class="menu__btn" for="menu__toggle">
             <span></span>
         </label>
-        <ul class="menu__box" id="menu">
+        <ul class="menu__box opacit" id="menu">
 
             <li><a class="menu__item-1" class="navbar-brand" href="/">Home</a></li>
             <li><a class="menu__item" href="{{route('apartment')}}">adverts</a></li>
