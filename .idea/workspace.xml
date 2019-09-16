@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3a9472-8a2e-440e-9675-1a077d220ad9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/edit-article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit-article.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/view-article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view-article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/OffersFormValidation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/OffersFormValidation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_15_153148_create_comment_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/fon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/add-offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/add-offer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/view-offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view-offer.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +227,7 @@
       <workItem from="1568404458490" duration="8233000" />
       <workItem from="1568557423596" duration="9625000" />
       <workItem from="1568576788073" duration="66939000" />
-      <workItem from="1568644166675" duration="668000" />
+      <workItem from="1568644166675" duration="5938000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1567441972016</created>
@@ -271,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568644569615</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="остання правка">
+      <created>1568644889873</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568644889873</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

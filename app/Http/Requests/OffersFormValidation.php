@@ -20,7 +20,7 @@ class OffersFormValidation extends FormRequest
             'price' => 'required|numeric|max:999999999999',
             'title' => 'required|max:255',
             'images' => 'file|mimes:png,jpg,jpeg,gif|max:10240',
-            'description' => 'nullable|max:500',
+            'description' => 'nullable|max:2000',
 
         ];
     }

@@ -22,6 +22,8 @@
         background: url('http://genchi.info/image/new-york-city-wallpaper-hd-3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
+        height: 100%;
+        background-size: cover;
     }
 
     h1 {

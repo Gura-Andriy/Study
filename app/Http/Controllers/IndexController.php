@@ -135,11 +135,10 @@ class IndexController extends Controller
     {
         $offer = Offer::find($offer_id);
         $user = User::find($offer->user_id);
-        $category = User::find($offer->category_id);
+        $category = Category::find($offer->category_id);
 
-        return view('view-offer', compact('offer','user'));
+        return view('view-offer', compact('offer','user','category'));
     }
-
 
     public function articles()
     {
@@ -185,13 +184,9 @@ class IndexController extends Controller
 
     public function searchOffer(Request $request)
     {
-
         $apartment = Offer::where('title', 'like', '%' . $request->input('search') . '%')->orderBy('id','DESC')->paginate(10);
-//        $article = Article::where('title', 'like', '%' . $request->input('search') . '%')->orderBy('id','DESC')->paginate(10);
 
         return view('apartment', compact('apartment'));
-//        return view('apartment', compact('apartment','article'));
-
     }
 
     public function showArticle($article_id)
@@ -201,25 +196,6 @@ class IndexController extends Controller
 
         return view('view-article', compact('article','user'));
     }
-
-
-
-
-
-
-//    public function submitAddComment(Request $request)
-//    {
-//        $comment = new Comment();
-//        $comment->page_id = Auth::page()->id;
-//        $comment->comment = $request->input('comment');
-//        $comment->user_id = Auth::user()->id;
-//        $comment->save();
-//
-//
-//        return redirect()->back;
-//    }
-
-
 
 }
 

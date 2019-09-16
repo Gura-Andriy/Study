@@ -45,6 +45,7 @@
 
         <div class="card-body text-center">
             <h1>{{$offer->title}}</h1>
+            <h4>{{$category->name}}</h4>
             <p>{{$offer->description}}</p>
             <h3>{{$user->name}}&nbsp&nbsp{{number_format($offer->price)}}&nbsp{{$offer->currency}}</h3>
         </div>
