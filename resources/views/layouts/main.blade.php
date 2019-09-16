@@ -26,6 +26,22 @@
         background-size: cover;
     }
 
+
+
+    @media (max-width: 700px) {
+        .asd {
+            height: 100%;
+            background-size: auto;
+        }
+    }
+
+    @media (min-width: 760px) {
+        asd {
+            background-size: cover;
+        }
+    }
+
+
     h1 {
         text-align: center;
         margin-top: auto;
@@ -42,7 +58,7 @@
 
 </style>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 asd">
 
 @include('layouts.header')
 @yield('content')
