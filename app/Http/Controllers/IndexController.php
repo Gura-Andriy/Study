@@ -202,6 +202,24 @@ class IndexController extends Controller
         return view('view-article', compact('article','user'));
     }
 
-}
 
+
+
+
+
+//    public function submitAddComment(Request $request)
+//    {
+//        $comment = new Comment();
+//        $comment->page_id = Auth::page()->id;
+//        $comment->comment = $request->input('comment');
+//        $comment->user_id = Auth::user()->id;
+//        $comment->save();
+//
+//
+//        return redirect()->back;
+//    }
+
+
+
+}
 

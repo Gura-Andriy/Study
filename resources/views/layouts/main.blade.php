@@ -34,6 +34,10 @@
         margin-top: 50px;
     }
 
+    body {
+        margin: 0;
+    }
+
 </style>
 
 <body class="d-flex flex-column h-100">
@@ -41,11 +45,8 @@
 @include('layouts.header')
 @yield('content')
 
-
-
 <h1>All realty in one place</h1>
 <h4>Fast, cheap, easy!</h4>
-
 
 @include('layouts.footer')
 <script src="/js/jquery.js"></script>
