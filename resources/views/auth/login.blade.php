@@ -28,7 +28,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
+            z-index: -1;
         }
 
         .bg-bubbles li {
@@ -165,6 +165,7 @@
                     <li></li>
                     <li></li>
                 </ul>
+
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
